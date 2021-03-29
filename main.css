@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #000;
+    --primary_900: #1a1a1a;
+    --primary_800: #262626;
+    --primary_700: #434343;
+    --primary_600: #555;
+    --primary_500: #7b7b7b;
+    --primary_400: #9d9d9d;
+    --primary_300: #c4c4c4;
+    --primary_200: #d9d9d9;
+    --primary_100: #ebebeb;
+    --primary_50: #f5f5f5;
+    --secondary: #f8ff13;
+    --secondary_900: #ff8c00;
+    --secondary_800: #ffb800;
+    --secondary_700: #fcd100;
+    --secondary_600: #faeb00;
+    --secondary_500: #f8ff13;
+    --secondary_400: #fbf33a;
+    --secondary_300: #f0f765;
+    --secondary_200: #f5fb95;
+    --secondary_100: #fafdc1;
+    --secondary_50: #feffe7;
+    --surface_default: #fff;
+    --surface_error: #e21a3d;
+    --surface_error_light: #ffe8e8;
+    --surface_error_dark: #753a3c;
+    --surface_success: #00984a;
+    --surface_live: #c92c4b;
+    --surface_link: #005a98;
+    --surface_super_menu_link: #f7ff004d;
+    --primary_50_40: #fbfbfb;
+    --sport_soccer: #187e4b;
+    --sport_pool: #187e4b;
+    --sport_amFootball: #187e4b;
+    --sport_fieldHockey: #187e4b;
+    --sport_futsal: #187e4b;
+    --sport_rugby: #187e4b;
+    --sport_cricket: #187e4b;
+    --sport_ausFootball: #187e4b;
+    --sport_soccerOutrights: #187e4b;
+    --sport_floorball: #187e4b;
+    --sport_dark_soccer: #00bd5f;
+    --sport_dark_pool: #00bd5f;
+    --sport_dark_amFootball: #00bd5f;
+    --sport_dark_fieldHockey: #00bd5f;
+    --sport_dark_futsal: #00bd5f;
+    --sport_dark_rugby: #00bd5f;
+    --sport_dark_cricket: #00bd5f;
+    --sport_dark_ausFootball: #00bd5f;
+    --sport_dark_soccerOutrights: #00bd5f;
+    --sport_dark_floorball: #00bd5f;
+    --sport_iceHockey: #1d7d96;
+    --sport_bandy: #1d7d96;
+    --sport_waterPolo: #1d7d96;
+    --sport_winterSport: #1d7d96;
+    --sport_curling: #1d7d96;
+    --sport_biathlon: #1d7d96;
+    --sport_dark_iceHockey: #3fbada;
+    --sport_dark_bandy: #3fbada;
+    --sport_dark_waterPolo: #3fbada;
+    --sport_dark_winterSport: #3fbada;
+    --sport_dark_curling: #3fbada;
+    --sport_dark_biathlon: #3fbada;
+    --sport_basketball: #d95d29;
+    --sport_dark_basketball: #f58557;
+    --sport_tennis: #999d0b;
+    --sport_golf: #999d0b;
+    --sport_bowls: #999d0b;
+    --sport_dark_tennis: #e9ef1f;
+    --sport_dark_golf: #e9ef1f;
+    --sport_dark_bowls: #e9ef1f;
+    --sport_eSport: #8533ab;
+    --sport_autoMoto: #8533ab;
+    --sport_entertaiment: #8533ab;
+    --sport_chess: #8533ab;
+    --sport_cycleRacing: #8533ab;
+    --sport_lottery: #8533ab;
+    --sport_otherEvents: #8533ab;
+    --sport_politics: #8533ab;
+    --sport_financial: #8533ab;
+    --sport_dark_eSport: #b672d5;
+    --sport_dark_autoMoto: #b672d5;
+    --sport_dark_entertaiment: #b672d5;
+    --sport_dark_chess: #b672d5;
+    --sport_dark_cycleRacing: #b672d5;
+    --sport_dark_lottery: #b672d5;
+    --sport_dark_otherEvents: #b672d5;
+    --sport_dark_politics: #b672d5;
+    --sport_dark_financial: #b672d5;
+    --sport_ufc: #c10e1f;
+    --sport_darts: #c10e1f;
+    --sport_box: #c10e1f;
+    --sport_mma: #c10e1f;
+    --sport_olympicGames: #c10e1f;
+    --sport_athletics: #c10e1f;
+    --sport_dark_ufc: #f94758;
+    --sport_dark_darts: #f94758;
+    --sport_dark_box: #f94758;
+    --sport_dark_mma: #f94758;
+    --sport_dark_olympicGames: #f94758;
+    --sport_dark_athletics: #f94758;
+    --sport_dark_kabaddi: #f94758;
+    --sport_volleyball: #cf7820;
+    --sport_baseball: #cf7820;
+    --sport_beachSoccer: #cf7820;
+    --sport_beachVolleyball: #cf7820;
+    --sport_dark_volleyball: #f7a24c;
+    --sport_dark_baseball: #f7a24c;
+    --sport_dark_beachSoccer: #f7a24c;
+    --sport_dark_beachVolleyball: #f7a24c;
+    --sport_handball: #1a8589;
+    --sport_dark_handball: #31d2d8;
+    --sport_tableTennis: #3c57e2;
+    --sport_badminton: #3c57e2;
+    --sport_squash: #3c57e2;
+    --sport_dark_tableTennis: #6a81f7;
+    --sport_dark_badminton: #6a81f7;
+    --sport_dark_squash: #6a81f7;
+    --sport_top: #ff8c00;
+    --sport_dark_top: #ff8c00;
+    --sport_favorite: #ffd600;
+    --sport_dark_favorite: #ffd600;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;;
+}
+
+.hide {
+    display: none;
+}
+
+.header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10002;
+    width: 100%;
+    height: 44px;
+    background-color: var(--primary);
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 2px -1px rgba(0, 0, 0, .12), 0 1px 3px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 2px -1px rgba(0, 0, 0, .12), 0 1px 3px 0 rgba(0, 0, 0, .2);
+}
+
+.header {
+    height: 44px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: var(--primary);
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.header-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+.header-logo .link {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    align-self: center;
+    width: 80px;
+}
+
+.header-logo .link img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 44px;
+}
+
+.main-wrapper {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: var(--surface_default);
+    overflow: hidden;
+}
+
+.login-container {
+    height: 100%;
+}
+
+.login-container .login-header {
+    background-color: var(--primary_100);
+}
+
+.login-header .heading-bar {
+    background-color: var(--primary_100);
+    color: var(--primary);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 44px;
+    z-index: 1;
+}
+
+.heading-bar .heading-bar-title {
+    padding-right: 68px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding-left: 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.login-container .login-main {
+    padding: 16px 16px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-main-container {
+    max-width: 656px;
+    margin: 0 auto;
+    padding-top: 32px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.login-container .login-main .form-identifier {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 74px;
+}
+
+.login-main-container .label {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    height: 50px;
+    margin-bottom: 24px;
+}
+
+.login-main-container .input {
+    position: relative;
+    min-width: 100%;
+    border: none;
+    border-radius: 0;
+    outline: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    color: inherit;
+    background-color: transparent;
+    -webkit-transition: border-color .3s ease, color .3s ease;
+    -o-transition: border-color .3s ease, color .3s ease;
+    transition: border-color .3s ease, color .3s ease;
+    cursor: pointer;
+    border-bottom: 1px solid var(--primary_400);
+}
+
+.login-main-container .label .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: top .3s ease, -webkit-transform .3s ease;
+    -o-transition: top .3s ease, transform .3s ease;
+    transition: top .3s ease, transform .3s ease, -webkit-transform .3s ease;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--primary_400);
+    -webkit-transform: translateY(7px) translateY(-50%);
+    -ms-transform: translateY(7px) translateY(-50%);
+    transform: translateY(7px) translateY(-50%);
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+}
+
+.form-identifier .email-label {
+    max-height: 50px;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    margin-right: 8px;
+}
+
+.form-identifier .email-label .email-input {
+    padding: 22px 0 6px;
+}
+
+
+.form-password {
+    position: relative;
+}
+
+.form-password .pass-input {
+    padding: 22px 0 8px;
+}
+
+
+.login-main-container .login-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 44px;
+    padding: 0 16px;
+    font-size: 14px;
+    color: var(--primary);
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: none;
+    border-radius: 2px;
+    font-family: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    vertical-align: middle;
+    font-weight: 700;
+    background: var(--secondary) 0 0;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.login-main-container .login-btn span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.login-main-container .register-btn {
+    margin: 0 0 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 44px;
+    padding: 0 16px;
+    font-size: 14px;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 2px;
+    font-family: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    vertical-align: middle;
+    font-weight: 700;
+    background: var(--surface_default) 0 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.login-main-container .register-btn span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.login-main-container .restore-pass {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: underline;
+    color: var(--primary_500);
+}
+
+.profile-wrapper {
+    padding: 16px 16px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.profile {
+    max-width: 656px;
+    margin: 0 auto;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 2px -1px rgba(0, 0, 0, .12), 0 1px 3px 0 rgba(0, 0, 0, .2);
+}
+
+.profile-header {
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary_50);
+}
+
+.profile-header .title {
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.profile-main {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-main .profile-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+
+}
+
+.user-info {
+    text-align: start;
+    padding: 10px 20px;
+}
+
+.user-info:not(:last-child) {
+    border-bottom: 1px solid var(--primary_400);
+}
+
+.user-info .title {
+    font-size: 14px;
+    color: var(--primary_400);
+}
+
+.user-info .value {
+    font-size: 16px;
+    background-color: var(--surface_default);
+}
+
+.profile-main .profile-img {
+    display: inline-flex;
+    padding: 40px;
+    width: 80px;
+}
+
+.profile-img img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}

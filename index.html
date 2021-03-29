@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-US">
+<head><title>Parimatch</title>
+  <meta charset="UTF-8">
+  <meta name="fragment" content="!">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+  <meta name="theme-color" content="#000000">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="./main.css" rel="stylesheet">
+</head>
+<body>
+<div id="root">
+  <div class="header-wrapper" data-id="header-wrapper">
+    <div class="header">
+      <div class="header-logo">
+        <a href="/" class="link" data-id="header-logo"><img
+            src="./assets/pm-logo.svg" alt=""></a>
+      </div>
+    </div>
+  </div>
+  <div class="main-wrapper">
+    <div class="login-container">
+      <div class="login-header">
+        <div data-id="heading-bar" class="heading-bar">
+          <div data-id="heading-bar-title"
+               class="heading-bar-title">Log in
+          </div>
+        </div>
+      </div>
+      <div class="login-main">
+        <div class="login-main-container">
+          <div class="form-identifier">
+            <label data-id="email" for="email" class="email-label label">
+              <input name="email" type="text" id="email" placeholder="example@email.com"
+                     class="email-input input" value="alexgulitskyy@ukr.net">
+              <span class="text">E-mail</span>
+            </label>
+          </div>
+          <div class="form-password">
+            <label data-id="password" for="password" class="label">
+              <input name="password" type="password" id="password" class="input pass-input" value="1234567">
+              <span class="text">Password</span>
+            </label>
+          </div>
+          <button data-id="login-button" class="login-btn" type="submit">
+            <span>Log in</span></button>
+          <div class="socials-container"></div>
+          <button data-id="registration" class="register-btn" type="button">
+            <span>Sign up</span>
+          </button>
+          <a data-id="restore-password" href="#" class="restore-pass">Forgot your password?</a></div>
+      </div>
+    </div>
+    <div class="profile-wrapper hide">
+      <div class="profile">
+        <div class="profile-header">
+          <span class="title">Personal Data</span>
+        </div>
+        <div class="profile-main">
+          <div class="profile-img"></div>
+          <div class="profile-info"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="//js-widget-tp7mc.ondigitalocean.app/library.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>
