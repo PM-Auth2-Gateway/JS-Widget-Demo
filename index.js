@@ -23,7 +23,7 @@ const callback = (data) => {
 
 }
 
-new AuthPM(125, '.socials-container', callback);
+new AuthPM(155, '.socials-container', callback);
 
 const createUserInfo =(key, value ) => {
   const wrapper = document.createElement('div')
